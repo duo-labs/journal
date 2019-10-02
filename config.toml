@@ -1,0 +1,18 @@
+baseURL = "https://your_site_here"
+languageCode = "en-us"
+title = "Labs Journal"
+enableEmoji = true
+pygmentsCodeFences = true
+pygmentsStyle = "lovelace"
+theme = "journal-theme"
+assetDir = "themes/journal-theme/static/"
+[params]
+    logo = "/images/Duo-Labs-Logo.svg"
+    share = false
+[taxonomies]
+  author = "authors"
+  category = "categories"
+  tag = "tags"
+  dataset = "datasets"
+[outputs]
+  home = [ "HTML", "JSON", "RSS" ]
