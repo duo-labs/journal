@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/authors/jwright/</loc>
+    <lastmod>2019-09-17T09:42:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/authors/</loc>
+    <lastmod>2019-09-17T09:42:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/post/team/jwright/installation/</loc>
+    <lastmod>2019-09-17T09:42:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/tags/getting-started/</loc>
+    <lastmod>2019-09-17T09:42:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/</loc>
+    <lastmod>2019-09-17T09:42:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/post/</loc>
+    <lastmod>2019-09-17T09:42:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/tags/</loc>
+    <lastmod>2019-09-17T09:42:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/tags/cli/</loc>
+    <lastmod>2019-09-09T22:17:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/post/team/jwright/command_reference/</loc>
+    <lastmod>2019-09-09T22:17:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/post/team/jwright/features/</loc>
+    <lastmod>2019-09-09T21:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/tags/features/</loc>
+    <lastmod>2019-09-09T21:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/tags/theme/</loc>
+    <lastmod>2019-09-09T21:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/datasets/</loc>
+  </url>
+  
+  <url>
+    <loc>https://duo-labs.github.io/journal/search/</loc>
+  </url>
+  
+</urlset>

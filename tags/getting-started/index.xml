@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>getting started on Labs Journal</title>
+    <link>https://duo-labs.github.io/journal/tags/getting-started/</link>
+    <description>Recent content in getting started on Labs Journal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Sep 2019 09:42:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://duo-labs.github.io/journal/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://duo-labs.github.io/journal/post/team/jwright/installation/</link>
+      <pubDate>Tue, 17 Sep 2019 09:42:30 +0000</pubDate>
+      
+      <guid>https://duo-labs.github.io/journal/post/team/jwright/installation/</guid>
+      <description>&lt;p&gt;Welcome to Journal! 👋&lt;/p&gt;
+
+&lt;p&gt;Journal is a set of components designed to make it easy for members of a team to share knowledge. These components include a command-line client, &lt;code&gt;journal&lt;/code&gt; that automates many of the common publish/deploy tasks, as well as a powerful theme for the Hugo static site generator that makes for pleasant reading experience.&lt;/p&gt;
+
+&lt;p&gt;In this guide, we&amp;rsquo;ll step through how to get a new instance of Journal up and running.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

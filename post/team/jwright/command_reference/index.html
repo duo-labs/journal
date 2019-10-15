@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Command Reference"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  <meta property="og:title" content="Command Reference &middot; Labs Journal" />
+  <meta property="og:site_name" content="Labs Journal" />
+  <meta property="og:url" content="https://duo-labs.github.io/journal/post/team/jwright/command_reference/" />
+
+  
+  
+  
+
+  
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2019-09-09T22:17:09Z" />
+
+  
+  <meta property="article:tag" content="cli" />
+  
+  
+
+  <title>Command Reference &middot; Labs Journal</title>
+
+  
+  <meta name="description" content="&lt;p&gt;The &lt;code&gt;journal&lt;/code&gt; CLI is a simple wrapper designed to make it easy for team members to write and share notes. This guide includes a reference showing " />
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="/journal/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/journal/images/apple-touch-icon.png" />
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="https://duo-labs.github.io/journal/css/bundle.min.css" />
+  
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+  
+
+  
+
+  
+  
+  <link href="/journal/index.xml" rel="alternate" type="application/rss+xml" title="Labs Journal" />
+  
+  
+  
+  <meta name="generator" content="Hugo 0.58.3" />
+
+  <link rel="canonical" href="https://duo-labs.github.io/journal/post/team/jwright/command_reference/" />
+
+  
+  
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name":  null ,
+        "logo": "https://duo-labs.github.io/journal//images/Duo-Labs-Logo.svg"
+    },
+    "author": {
+        "@type": "Person",
+        "name":  null ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://duo-labs.github.io/journal//images/Duo-Labs-Logo.svg",
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url":  null ,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": "Command Reference",
+    "name": "Command Reference",
+    "wordCount":  752 ,
+    "timeRequired": "PT4M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": "en"
+    },
+    "url": "https://duo-labs.github.io/journal/post/team/jwright/command_reference/",
+    "datePublished": "2019-09-09T22:17Z",
+    "dateModified": "2019-09-09T22:17Z",
+    
+    "keywords": "cli",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://duo-labs.github.io/journal/post/team/jwright/command_reference/"
+    }
+}
+    </script>
+    
+
+
+  
+
+  
+
+  
+</head>
+
+<body class="nav-closed">
+
+  
+
+    <header class="main-header no-cover">
+
+    <nav class="main-nav overlay clearfix">
+        
+            <a class="blog-logo" href="https://duo-labs.github.io/journal/"><img src="/journal/images/Duo-Labs-Logo.svg" alt="Blog Logo" /></a>
+        
+        
+        <a class="menu-button icon-button icon-search" href="/journal/search">&nbsp;&nbsp;Search</a>
+        <div class="taxonomy-switcher">
+    <a href="/journal/datasets" class="menu-button">Datasets</a>
+    <a href="/journal/" class="menu-button">Posts</a>
+</div>
+    </nav>
+    
+</header>
+
+  <div class="site-wrapper">
+
+<main class="content" role="main">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#journal-author"><code>journal author</code></a></li>
+<li><a href="#journal-convert"><code>journal convert</code></a></li>
+<li><a href="#journal-create"><code>journal create</code></a></li>
+<li><a href="#journal-dataset"><code>journal dataset</code></a></li>
+<li><a href="#journal-preview"><code>journal preview</code></a></li>
+<li><a href="#journal-push"><code>journal push</code></a></li>
+<li><a href="#journal-update"><code>journal update</code></a></li>
+</ul>
+</nav>
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Command Reference</h1>
+        <small></small>
+        
+        <section class="post-meta">
+            
+            <div class="authors post-meta-row">
+                
+                    <span class="author">
+                    
+                        <a href="/journal/authors/jwright/">
+                        
+                            <img class="author-thumb" src="/journal/authors/jwright/avatar.jpg" alt="Author image" nopin="nopin" />
+                        
+                        Jordan Wright
+                        </a>
+                    
+                    </span>
+                
+            </div>
+            
+        
+          <div>
+            <time class="post-date" datetime="2019-09-09T22:17:09Z">
+              Sep 9, 2019,
+            </time>
+            4 minute read
+          </div>
+        
+          <div>
+          
+            <span class="post-tag small"><a href="https://duo-labs.github.io/journal//tags/cli/">#cli</a></span>
+          
+          </div>
+
+        </section>
+        
+
+        
+    </header>
+
+    <section class="post-content">
+        <p>The <code>journal</code> CLI is a simple wrapper designed to make it easy for team members to write and share notes. This guide includes a reference showing what commands are available via <code>journal</code>.</p>
+
+<h1 id="usage">Usage</h1>
+
+<p>Usage and help information can be found using <code>journal --help</code></p>
+
+<pre><code>journal --help
+Usage: journal [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  author   Creates a new author for the Journal...
+  convert  Converts a non-Markdown post into a format...
+  create   Creates a new knowledge repo post.
+  dataset  Add a new dataset to Journal.
+  preview  Launches Hugo's preview server to live reload...
+  push     Pushes the post to Journal.
+  update   Updates the kr client.
+</code></pre>
+
+<h1 id="journal-author"><code>journal author</code></h1>
+
+<p>Creates a new author for the Journal instance. This creates an <code>_index.md</code> file in <code>$JOURNAL_PATH/content/authors/&lt;username&gt;/</code> as well as creating the author&rsquo;s avatar.</p>
+
+
+<div class="notices tip" >
+It's recommended to keep the size of the author avatar small to help with page loading.
+</div>
+
+<p>Usage:</p>
+
+<pre><code>journal author --help
+Usage: journal author [OPTIONS] [USERNAME]
+
+  Creates a new author for the Journal instance.
+
+Options:
+  --name TEXT
+  --avatar PATH
+  --help         Show this message and exit
+</code></pre>
+
+<h1 id="journal-convert"><code>journal convert</code></h1>
+
+<p>Converts a non-Markdown post into a format that&rsquo;s acceptable by Journal. Currently, <code>journal</code> supports converting Jupyter notebooks and R Markdown files.</p>
+
+<p>Jupyter notebooks are converted to Markdown, and <code>journal</code> also handles extracting images into the appropriate <code>static/</code> folder and cleaning up output cells.</p>
+
+<p>R Markdown (Rmd) files are converted to HTML, parsing out the body of the post into a separate file.</p>
+
+<p>Usage:</p>
+
+<pre><code>journal convert --help
+Usage: journal convert [OPTIONS] [FILENAME]
+
+  Converts a non-Markdown post into a format that's acceptable by Journal.
+
+  It converts Jupyter notebooks to Markdown, extracting images and cleaning
+  up output cells.
+
+  It converts Rmd files to HTML, parsing out the body of the post into a
+  separate file.
+
+Options:
+  --help  Show this message and exit.
+</code></pre>
+
+<h1 id="journal-create"><code>journal create</code></h1>
+
+<p>Creates a new Journal post. By default, the template for the post is found by the file extension provided. So, <code>my_new_post.md</code> would be created using the Markdown template.</p>
+
+<p>You can specify a custom template using the <code>-t</code> flag.</p>
+
+<p>The new post is placed in the <code>$JOURNAL_PATH/content/post/team/$AUTHOR/</code> directory. If an editor is configured in your <code>journal.toml</code>, then the post will be automatically opened in that editor.</p>
+
+<p>Usage:</p>
+
+<pre><code>journal create --help
+Usage: journal create [OPTIONS] [FILENAME]
+
+  Creates a new Journal post.
+
+  If no filename is specified, we'll create a daily post. If no template is
+  specified, the default template for the provided filetype is used.
+
+Options:
+  -t, --template PATH  The template to use when creating the new post
+  --help               Show this message and exit.
+</code></pre>
+
+<h1 id="journal-dataset"><code>journal dataset</code></h1>
+
+<p>Adds a new dataset to Journal.</p>
+
+<p>Usage:</p>
+
+<pre><code>journal dataset --help
+Usage: journal dataset [OPTIONS] LOCATION [NAME]
+
+  Add a new dataset to Journal.
+
+Options:
+  --help  Show this message and exit.
+</code></pre>
+
+<h1 id="journal-preview"><code>journal preview</code></h1>
+
+<p>Starts a local Hugo instance to render a preview of your Journal instance. By default, this will start a web server on <a href="http://localhost:1313">http://localhost:1313</a>.</p>
+
+
+<div class="notices note" >
+This command requires Hugo to be installed and on the $PATH.
+</div>
+
+<p>Usage:</p>
+
+<pre><code>journal preview --help
+Usage: journal preview [OPTIONS]
+
+  Launches Hugo's preview server to live reload pages.
+
+  If the Hugo executable isn't found on the PATH, then we'll provide some
+  installation instructions showing how best to install it.
+
+Options:
+  -D, --drafts TEXT  Whether to render draft posts
+  --help             Show this message and exit.
+</code></pre>
+
+<h1 id="journal-push"><code>journal push</code></h1>
+
+<p>Commits the new post as well as any static assets, and pushes the changes to the upstream repository. By default, the <code>push</code> command will offer to push the most recently modified post, but this can be changed by providing a filepath as an argument.</p>
+
+<p>The Git flow performed by this command is essentially:</p>
+
+<pre><code>git add your_post.md static/*
+git commit -m &quot;Updated post ... at ...&quot;
+git pull --rebase
+git push
+</code></pre>
+
+<p>Usage:</p>
+
+<pre><code>journal push --help
+Usage: journal push [OPTIONS] [FILENAME]
+
+  Pushes the post to Journal.
+
+  Push adds the note to the actual Git repo, and deploys it using the
+  standard pull/merge/push Git workflow.
+
+  By default, if the `filename` argument isn't provided, the last modified
+  file is deployed.
+
+Options:
+  --help  Show this message and exit.
+</code></pre>
+
+<h1 id="journal-update"><code>journal update</code></h1>
+
+<p>Updates the <code>journal</code> client as well as the local instance of the Journal theme. The latter helps with updating the local previews anytime the upstream theme is updated.</p>
+
+<p>The Git flow performed by this command is essentially:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#888;font-style:italic"># In the `journal` directory</span>
+git pull --rebase
+<span style="color:#888;font-style:italic"># In the local Journal directory</span>
+git submodule update --init --remote --recursive</code></pre></div>
+<p>Usage:</p>
+
+<pre><code>journal update --help
+Usage: journal update [OPTIONS]
+
+  Updates the journal CLI.
+
+  The updates work by pulling the latest changes from Github.
+
+Options:
+  --help  Show this message and exit.
+</code></pre>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+  
+
+    
+    
+
+    
+      
+        
+          
+          <figure class="author-image">
+            <a class="img" href="https://duo-labs.github.io/journal/" style="background-image: url(/journal/authors/jwright/avatar.jpg)"><span class="hidden">'s Picture</span></a>
+          </figure>
+          
+        
+
+        <div class="author-section">
+          
+            
+          
+          <section class="author">
+              <h4><a href="/journal/authors/jwright/">Jordan Wright</a></h4>
+              
+                <p class="no-print">Read <a href="/journal/authors/jwright/">more posts</a> by this author.</p>
+              
+          </section>
+        </div>
+      
+    
+  
+
+
+    
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next no-print">
+  
+      <a class="read-next-story" style="no-cover" href="/journal/post/team/jwright/installation/">
+          <section class="post">
+              <h2>Getting Started</h2>
+              
+          </section>
+      </a>
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="/journal/post/team/jwright/features/">
+          <section class="post">
+              <h2>Features</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+<footer class="site-footer clearfix">
+    
+    <section class="poweredby no-print">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>
+    </section>
+    
+</footer>
+</div>
+
+
+
+
+
+
+
+<script src="https://duo-labs.github.io/journal/js/bundle.min.js"></script>
+<script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    MathJax.Hub.Config({
+        messageStyle: "none",
+        tex2jax: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ],
+            displayMath: [
+                ['$$', '$$'],
+                ['\\[', '\\]']
+            ],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: {
+                    autoNumber: "AMS"
+                },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+    MathJax.Hub.Queue(function () {
+        
+        
+        
+        var all = MathJax.Hub.getAllJax(),
+            i;
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+
+    MathJax.Hub.Config({
+        
+        TeX: {
+            equationNumbers: {
+                autoNumber: "AMS"
+            }
+        }
+    });
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Labs Journal</title>
+    <link>https://duo-labs.github.io/journal/tags/</link>
+    <description>Recent content in Tags on Labs Journal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Sep 2019 09:42:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://duo-labs.github.io/journal/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>getting started</title>
+      <link>https://duo-labs.github.io/journal/tags/getting-started/</link>
+      <pubDate>Tue, 17 Sep 2019 09:42:30 +0000</pubDate>
+      
+      <guid>https://duo-labs.github.io/journal/tags/getting-started/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cli</title>
+      <link>https://duo-labs.github.io/journal/tags/cli/</link>
+      <pubDate>Mon, 09 Sep 2019 22:17:09 +0000</pubDate>
+      
+      <guid>https://duo-labs.github.io/journal/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>features</title>
+      <link>https://duo-labs.github.io/journal/tags/features/</link>
+      <pubDate>Mon, 09 Sep 2019 21:57:00 +0000</pubDate>
+      
+      <guid>https://duo-labs.github.io/journal/tags/features/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>theme</title>
+      <link>https://duo-labs.github.io/journal/tags/theme/</link>
+      <pubDate>Mon, 09 Sep 2019 21:57:00 +0000</pubDate>
+      
+      <guid>https://duo-labs.github.io/journal/tags/theme/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

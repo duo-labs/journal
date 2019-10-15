@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>theme on Labs Journal</title>
+    <link>https://duo-labs.github.io/journal/tags/theme/</link>
+    <description>Recent content in theme on Labs Journal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Sep 2019 21:57:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://duo-labs.github.io/journal/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Features</title>
+      <link>https://duo-labs.github.io/journal/post/team/jwright/features/</link>
+      <pubDate>Mon, 09 Sep 2019 21:57:00 +0000</pubDate>
+      
+      <guid>https://duo-labs.github.io/journal/post/team/jwright/features/</guid>
+      <description>&lt;p&gt;When we created Journal, we knew we wanted the reading experience to be pleasant. This is why we&amp;rsquo;ve combined, adapted, and improved existing Hugo themes such as  the excellent &lt;a href=&#34;https://themes.gohugo.io/casper/&#34;&gt;Casper&lt;/a&gt; and &lt;a href=&#34;https://themes.gohugo.io/academic/&#34;&gt;Academic&lt;/a&gt; themes into a powerful theme.&lt;/p&gt;
+
+&lt;p&gt;This guide demonstrates just some of the ways you can use Journal to write and share information.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

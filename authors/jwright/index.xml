@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Labs Journal</title>
+    <link>https://duo-labs.github.io/journal/authors/jwright/</link>
+    <description>Recent content on Labs Journal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Sep 2019 09:42:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://duo-labs.github.io/journal/authors/jwright/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://duo-labs.github.io/journal/post/team/jwright/installation/</link>
+      <pubDate>Tue, 17 Sep 2019 09:42:30 +0000</pubDate>
+      
+      <guid>https://duo-labs.github.io/journal/post/team/jwright/installation/</guid>
+      <description>&lt;p&gt;Welcome to Journal! 👋&lt;/p&gt;
+
+&lt;p&gt;Journal is a set of components designed to make it easy for members of a team to share knowledge. These components include a command-line client, &lt;code&gt;journal&lt;/code&gt; that automates many of the common publish/deploy tasks, as well as a powerful theme for the Hugo static site generator that makes for pleasant reading experience.&lt;/p&gt;
+
+&lt;p&gt;In this guide, we&amp;rsquo;ll step through how to get a new instance of Journal up and running.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Command Reference</title>
+      <link>https://duo-labs.github.io/journal/post/team/jwright/command_reference/</link>
+      <pubDate>Mon, 09 Sep 2019 22:17:09 +0000</pubDate>
+      
+      <guid>https://duo-labs.github.io/journal/post/team/jwright/command_reference/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;journal&lt;/code&gt; CLI is a simple wrapper designed to make it easy for team members to write and share notes. This guide includes a reference showing what commands are available via &lt;code&gt;journal&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Features</title>
+      <link>https://duo-labs.github.io/journal/post/team/jwright/features/</link>
+      <pubDate>Mon, 09 Sep 2019 21:57:00 +0000</pubDate>
+      
+      <guid>https://duo-labs.github.io/journal/post/team/jwright/features/</guid>
+      <description>&lt;p&gt;When we created Journal, we knew we wanted the reading experience to be pleasant. This is why we&amp;rsquo;ve combined, adapted, and improved existing Hugo themes such as  the excellent &lt;a href=&#34;https://themes.gohugo.io/casper/&#34;&gt;Casper&lt;/a&gt; and &lt;a href=&#34;https://themes.gohugo.io/academic/&#34;&gt;Academic&lt;/a&gt; themes into a powerful theme.&lt;/p&gt;
+
+&lt;p&gt;This guide demonstrates just some of the ways you can use Journal to write and share information.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

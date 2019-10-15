@@ -1,0 +1,134 @@
+/* TODO: Ensure each view is responsive */
+
+/* Contains CSS overrides for dataset list and detail view */
+
+/* Extra icons and classes */
+.icon-warning:before { 
+    content: "\f414"; 
+}
+
+.float-right {
+    float:right
+}
+
+.taxonomy-switcher {
+    border: none;
+}
+
+/* List view is contained in a div with class .datasets-list */
+.datasets-list .grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-column-gap: 5%;
+    margin: auto 10%;
+}
+
+.datasets-list .grid .datasets {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.datasets .post-title {
+    font-size: 3rem !important;
+}
+
+.datasets time {
+    color: #9eabb3;
+}
+
+.basic-metadata a {
+    text-decoration: none;
+}
+
+.basic-metadata td {
+    border-bottom: #efefef 1px solid;
+    font-size: 0.9em;
+}
+
+.basic-metadata tr td:first-child {
+    text-transform: uppercase;
+    font-size: 0.75em;
+    text-align: right;
+    color: #aaa;
+}
+
+.basic-metadata input {
+    border: none;
+    background: none;
+    color: inherit;
+    width: 100%;
+}
+
+.datasets-list .datasets {
+    margin: 0 0;
+    padding: 1em 1em;
+    border: #ebf2f6 1px solid;
+}
+
+.datasets-list .tags a {
+    color: #aaa;
+}
+
+h3.dataset-name {
+    font-size: 1.5rem;
+}
+
+/* Details view is contained in a div with class .datasets-detail */
+.datasets-detail {
+    display: grid;
+    grid-template-columns: auto 400px;
+    max-width: 1110px;
+    margin: auto;
+}
+
+.datasets-detail .sidebar {
+    margin-top: 4rem;
+    font-size: 0.9em;
+    padding-left: 1em;
+    border-left: #e7eef2 1px solid;
+}
+
+.datasets-detail .sidebar h3 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.datasets-detail .sidebar .schema {
+    font-size: 0.9em;
+}
+
+.datasets-detail .sidebar .schema .field {
+    font-weight: bold;
+    font-family: Inconsolata, monospace, sans-serif;
+}
+
+.schema .field .type {
+    color: #0594cb;
+    font-style: italic;
+}
+
+.datasets-detail .datasets-lineage {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* List of datasets linked to a post */
+
+.datasets-single h3 {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+/* Notebooks */
+.notebook-cell-button {
+    background: #eee;
+    border: none;
+    padding: 0.25em;
+}
+
+@media print {
+    .datasets-single {
+        display: none;
+    }
+}

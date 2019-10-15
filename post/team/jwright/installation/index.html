@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Getting Started"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  <meta property="og:title" content="Getting Started &middot; Labs Journal" />
+  <meta property="og:site_name" content="Labs Journal" />
+  <meta property="og:url" content="https://duo-labs.github.io/journal/post/team/jwright/installation/" />
+
+  
+  
+  
+
+  
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2019-09-17T09:42:30Z" />
+
+  
+  <meta property="article:tag" content="getting started" />
+  
+  
+
+  <title>Getting Started &middot; Labs Journal</title>
+
+  
+  <meta name="description" content="&lt;p&gt;Welcome to Journal! 👋&lt;/p&gt;
+
+&lt;p&gt;Journal is a set of components designed to make it easy for members of a team to share knowledge. These components include a co" />
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="/journal/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/journal/images/apple-touch-icon.png" />
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="https://duo-labs.github.io/journal/css/bundle.min.css" />
+  
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+  
+
+  
+
+  
+  
+  <link href="/journal/index.xml" rel="alternate" type="application/rss+xml" title="Labs Journal" />
+  
+  
+  
+  <meta name="generator" content="Hugo 0.58.3" />
+
+  <link rel="canonical" href="https://duo-labs.github.io/journal/post/team/jwright/installation/" />
+
+  
+  
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name":  null ,
+        "logo": "https://duo-labs.github.io/journal//images/Duo-Labs-Logo.svg"
+    },
+    "author": {
+        "@type": "Person",
+        "name":  null ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://duo-labs.github.io/journal//images/Duo-Labs-Logo.svg",
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url":  null ,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": "Getting Started",
+    "name": "Getting Started",
+    "wordCount":  813 ,
+    "timeRequired": "PT4M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": "en"
+    },
+    "url": "https://duo-labs.github.io/journal/post/team/jwright/installation/",
+    "datePublished": "2019-09-17T09:42Z",
+    "dateModified": "2019-09-17T09:42Z",
+    
+    "keywords": "getting started",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://duo-labs.github.io/journal/post/team/jwright/installation/"
+    }
+}
+    </script>
+    
+
+
+  
+
+  
+
+  
+</head>
+
+<body class="nav-closed">
+
+  
+
+    <header class="main-header no-cover">
+
+    <nav class="main-nav overlay clearfix">
+        
+            <a class="blog-logo" href="https://duo-labs.github.io/journal/"><img src="/journal/images/Duo-Labs-Logo.svg" alt="Blog Logo" /></a>
+        
+        
+        <a class="menu-button icon-button icon-search" href="/journal/search">&nbsp;&nbsp;Search</a>
+        <div class="taxonomy-switcher">
+    <a href="/journal/datasets" class="menu-button">Datasets</a>
+    <a href="/journal/" class="menu-button">Posts</a>
+</div>
+    </nav>
+    
+</header>
+
+  <div class="site-wrapper">
+
+<main class="content" role="main">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#installation">Installation</a>
+<ul>
+<li><a href="#using-docker">Using Docker</a></li>
+<li><a href="#manual-installation">Manual Installation</a>
+<ul>
+<li><a href="#installing-the-journal-cli">Installing the <code>journal</code> CLI</a></li>
+<li><a href="#installing-hugo">Installing Hugo</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#first-time-setup">First Time Setup</a></li>
+<li><a href="#creating-a-new-author">Creating A New Author</a></li>
+<li><a href="#creating-your-first-post">Creating Your First Post</a></li>
+<li><a href="#previewing-content">Previewing Content</a></li>
+<li><a href="#publishing-your-post">Publishing Your Post</a></li>
+<li><a href="#that-s-it">That&rsquo;s It!</a></li>
+</ul>
+</nav>
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Getting Started</h1>
+        <small></small>
+        
+        <section class="post-meta">
+            
+            <div class="authors post-meta-row">
+                
+                    <span class="author">
+                    
+                        <a href="/journal/authors/jwright/">
+                        
+                            <img class="author-thumb" src="/journal/authors/jwright/avatar.jpg" alt="Author image" nopin="nopin" />
+                        
+                        Jordan Wright
+                        </a>
+                    
+                    </span>
+                
+            </div>
+            
+        
+          <div>
+            <time class="post-date" datetime="2019-09-17T09:42:30Z">
+              Sep 17, 2019,
+            </time>
+            4 minute read
+          </div>
+        
+          <div>
+          
+            <span class="post-tag small"><a href="https://duo-labs.github.io/journal//tags/getting-started/">#getting started</a></span>
+          
+          </div>
+
+        </section>
+        
+
+        
+    </header>
+
+    <section class="post-content">
+        <p>Welcome to Journal! 👋</p>
+
+<p>Journal is a set of components designed to make it easy for members of a team to share knowledge. These components include a command-line client, <code>journal</code> that automates many of the common publish/deploy tasks, as well as a powerful theme for the Hugo static site generator that makes for pleasant reading experience.</p>
+
+<p>In this guide, we&rsquo;ll step through how to get a new instance of Journal up and running.</p>
+
+<h1 id="installation">Installation</h1>
+
+<p>At it&rsquo;s core, Journal is a static site with a CLI that makes the editing experience pleasant. This means that there are just a few things you need to set up in order to start using Journal.</p>
+
+<p>While it&rsquo;s not strictly required, we <em>highly</em> encourage you to use the <code>journal</code> CLI. This is a wrapper around common commands that makes working with Journal much easier. In this guide, we&rsquo;ll assume the use of <code>journal</code>.</p>
+
+<h2 id="using-docker">Using Docker</h2>
+
+<p>You may find it easier to use <code>journal</code> via a Docker container. This container installs the <code>journal</code> command-line tool as well as any needed dependencies.</p>
+
+<p>To use the container, you&rsquo;ll need to mount a volume for the content itself, as well as your configuration.</p>
+
+
+<div class="notices note" ><p>In order for the container to start the first time, you will need to create the <code>journal.toml</code> file on your host machine. You can do this using the <code>touch</code> command.</p>
+</div>
+
+<p>Here is an example showing how to use the Docker image we maintain for <code>journal</code> at <code>duolabs/journal</code>.</p>
+
+<pre><code>touch /path/to/.journal.toml
+docker run -ti \
+    -p 1313:1313 \
+    -v /path/to/journal:/journal \
+    -v /path/to/.journal.toml:/.journal.toml \
+    -e JOURNAL_USER=$USER
+    duolabs/journal
+</code></pre>
+
+<h2 id="manual-installation">Manual Installation</h2>
+
+<h3 id="installing-the-journal-cli">Installing the <code>journal</code> CLI</h3>
+
+<p>Installing from PyPI is coming soon, but for now you can install <code>journal</code> by cloning the repository and installing the dependencies:</p>
+
+<pre><code>git clone https://github.com/duo-labs/journal-cli.git
+cd journal-cli
+pip install -r requirements.txt
+</code></pre>
+
+<p>Then, you&rsquo;ll want to add the <code>journal</code> script to your PATH.</p>
+
+<h3 id="installing-hugo">Installing Hugo</h3>
+
+<p>Journal uses Hugo to build the resulting website. You will need Hugo installed on the machine that is deploying the website (e.g. in a CI job). You can also use Hugo to preview your post as you write using the <code>journal preview</code> command.</p>
+
+
+<div class="notices note" ><p>The Docker image already has Hugo installed.</p>
+</div>
+
+<p>To install Hugo, refer to the instructions on their website.</p>
+
+<h1 id="first-time-setup">First Time Setup</h1>
+
+<p>With the <code>journal</code> CLI installed, it&rsquo;s time to set up your new Journal! Running <code>journal</code> the first time, you&rsquo;ll see a message that looks like this:</p>
+
+<pre><code>    It looks like this is your first time using Journal.
+
+    To set things up, it's assumed you've already made a fork or clone
+    of the Git repository at https://github.com/duo-labs/journal.
+
+    What is the URL of your repository?
+Repository URL:
+</code></pre>
+
+<p>At this point, it&rsquo;s assumed that you&rsquo;ve made a fork or some other copy of the Git repository at <a href="https://github.com/duo-labs/journal">https://github.com/duo-labs/journal</a>, which provides the skeleton of a new Journal instance. You will pass the URL to the upstream repository in the prompt. <code>journal</code> will use this path to clone down the repository to your local folder.</p>
+
+<h1 id="creating-a-new-author">Creating A New Author</h1>
+
+<p>Creating a new author is done using the <code>journal author</code> command. This creates a new entry in <code>$JOURNAL_PATH/content/authors</code> with the provided information.</p>
+
+<pre><code>journal-docs author --name &quot;Example Author&quot; --avatar path/to/avatar.png exampleauthor
+</code></pre>
+
+<h1 id="creating-your-first-post">Creating Your First Post</h1>
+
+<p>After your author is created, you can create your first post! You can find detailed information on how to create posts here, but for now we&rsquo;ll create a simple Markdown post.</p>
+
+<p>You can create a new post using:</p>
+
+<pre><code>journal create my_first_post.md
+</code></pre>
+
+<p>This will create a new file at <code>$JOURNAL_PATH/content/post/team/&lt;username&gt;/my_first_post.md</code>. When a new post is created, <code>journal</code> attempts to automatically open it in the editor configured in <code>.journal.toml</code>. By default, this is VSCode.</p>
+
+<p>With the post open, we can start editing.</p>
+
+<h1 id="previewing-content">Previewing Content</h1>
+
+<p>As you write your content, you may wish to see what it will look like when it&rsquo;s deployed. We provide the ability to start a local preview of the site (powered by Hugo) using:</p>
+
+<pre><code>journal preview
+</code></pre>
+
+<p>This preview updates automatically as changes to the post are saved.</p>
+
+<h1 id="publishing-your-post">Publishing Your Post</h1>
+
+<p>Finally, when your post looks good, it&rsquo;s time to deploy the site. The following command will automatically commit and push the new post as well as any new static assets:</p>
+
+<pre><code>journal push
+</code></pre>
+
+<p>For more information on how the <code>push</code> command works, check out our <a href="/post/team/jwright/command_reference/">Command Reference</a>.</p>
+
+<p>The <code>journal</code> CLI doesn&rsquo;t automatically build your site using Hugo. Rather, it&rsquo;s recommended to set up some kind of CI/CD pipeline so that the site is built and deployed on every commit. Specific examples that are guaranteed to work with Journal are coming soon, but generally any existing examples that show how to deploy a Hugo site will work with Journal.</p>
+
+<h1 id="that-s-it">That&rsquo;s It!</h1>
+
+<p>And that&rsquo;s it! Your new site should be live. New team members can install the <code>journal</code> CLI, point their configuration to the same repository, and start sharing notes.</p>
+
+<p>The next step is to learn about all the neat features that make Journal powerful.</p>
+
+<p>Enjoy!</p>
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+  
+
+    
+    
+
+    
+      
+        
+          
+          <figure class="author-image">
+            <a class="img" href="https://duo-labs.github.io/journal/" style="background-image: url(/journal/authors/jwright/avatar.jpg)"><span class="hidden">'s Picture</span></a>
+          </figure>
+          
+        
+
+        <div class="author-section">
+          
+            
+          
+          <section class="author">
+              <h4><a href="/journal/authors/jwright/">Jordan Wright</a></h4>
+              
+                <p class="no-print">Read <a href="/journal/authors/jwright/">more posts</a> by this author.</p>
+              
+          </section>
+        </div>
+      
+    
+  
+
+
+    
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next no-print">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="/journal/post/team/jwright/command_reference/">
+          <section class="post">
+              <h2>Command Reference</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+<footer class="site-footer clearfix">
+    
+    <section class="poweredby no-print">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>
+    </section>
+    
+</footer>
+</div>
+
+
+
+
+
+
+
+<script src="https://duo-labs.github.io/journal/js/bundle.min.js"></script>
+<script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    MathJax.Hub.Config({
+        messageStyle: "none",
+        tex2jax: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ],
+            displayMath: [
+                ['$$', '$$'],
+                ['\\[', '\\]']
+            ],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: {
+                    autoNumber: "AMS"
+                },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+    MathJax.Hub.Queue(function () {
+        
+        
+        
+        var all = MathJax.Hub.getAllJax(),
+            i;
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+
+    MathJax.Hub.Config({
+        
+        TeX: {
+            equationNumbers: {
+                autoNumber: "AMS"
+            }
+        }
+    });
+</script>
+
+
+</body>
+
+</html>
